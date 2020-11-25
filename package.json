@@ -1,0 +1,41 @@
+{
+  "name": "web-proxy-server",
+  "version": "0.0.2",
+  "description": "the node proxy server",
+  "keywords": [
+    "host",
+    "proxy",
+    "server"
+  ],
+  "author": "DB Eriospermum <imnodb@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imnodb/web-proxy-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imnodb/web-proxy-server/issues"
+  },
+  "engines": {
+    "node": ">= 7.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^9.4.6"
+  },
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "optionalDependencies": {},
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "publish": "npm publish",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "npm run build && node test/run.js"
+  }
+}
